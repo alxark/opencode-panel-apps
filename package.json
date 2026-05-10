@@ -1,6 +1,6 @@
 {
   "name": "@alxark/opencode-panel-apps",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenCode TUI plugin: render a sidebar panel of periodic shell-command outputs, configured via opencode-panel-apps.jsonc.",
   "type": "module",
   "exports": {
@@ -17,6 +17,9 @@
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc && node scripts/prepare-tui-dist.mjs",
     "typecheck": "tsc --noEmit",
@@ -41,7 +44,7 @@
   },
   "homepage": "https://github.com/alxark/opencode-panel-apps#readme",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "@opentui/solid": "^0.2.6",
